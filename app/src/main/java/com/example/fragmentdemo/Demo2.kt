@@ -24,8 +24,8 @@ class Demo2 : Fragment() {
         const val GOALS = "goals"
     }
 
-    override fun onSaveInstanceState(outState: Bundle) {
-        super.onSaveInstanceState(outState)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
         arguments?.let {
             name = it.getString(NAME).toString()
             track = it.getString(TRACK).toString()

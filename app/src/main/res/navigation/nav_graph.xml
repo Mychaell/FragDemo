@@ -10,6 +10,15 @@
         android:name="com.example.fragmentdemo.Demo"
         android:label="fragment_demo"
         tools:layout="@layout/fragment_demo" >
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="track"
+            app:argType="string" />
+        <argument
+            android:name="goals"
+            app:argType="string" />
         <action
             android:id="@+id/action_demo_to_demo2"
             app:destination="@id/demo2" />
@@ -28,8 +37,5 @@
         <argument
             android:name="goals"
             app:argType="string" />
-        <action
-            android:id="@+id/action_demo2_to_demo"
-            app:destination="@id/demo" />
     </fragment>
 </navigation>
